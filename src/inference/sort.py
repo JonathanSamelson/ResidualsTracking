@@ -17,7 +17,7 @@
 
 
     NOTE:
-    This file was slightly modified from the original repository 
+    This file was modified from the original repository 
     https://github.com/abewley/sort/
     1) To access the alpha parameter of the Kalman filter 
     to turn on the fading memory filter. 
@@ -25,6 +25,8 @@
     Older bounding boxes are less significant because vehicles move quite fast.
     2) To allow to get back the vehicle class that corresponds to the predictions.
     Note that vehicle classes are not used in this repository.
+
+    Modified by Jonathan Samelson (2021)
 """
 
 from __future__ import print_function

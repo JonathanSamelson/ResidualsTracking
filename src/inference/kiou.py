@@ -1,3 +1,15 @@
+"""
+Simple IOU based tracker with Kalman filter.
+
+Copyright (c) 2017 TU Berlin, Communication Systems Group
+Licensed under The MIT License [see LICENSE for details]
+Written by Erik Bochinski
+
+Adapted for online tracking by Jonathan Samelson (2021)
+
+See https://github.com/siyuanc2/kiout/ for more information
+"""
+
 from pykalman import KalmanFilter
 import numpy as np
 
@@ -21,10 +33,7 @@ class KIOU:
         self.tracks_pending = []
 
     def update(self, dets):
-        """
-        Simple IOU based tracker with Kalman filter, adapted for online tracking
-        See https://github.com/siyuanc2/kiout/ for more information
-
+        """ Update the state of the tracker, returns the predictions with IDs
         Args:
             dets (list): list of detections, field names: ['bbox': ('x1', 'y1', 'x2', 'y2'), 'score', 'class']
         Returns:

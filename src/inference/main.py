@@ -99,6 +99,7 @@ def main():
         confidences = np.take(confidences, indices)
 
         # Perform tracking
+        # using SORT
         if args['tracker'] == 'sort':
             if len(bboxes) == 0:
                 dets = np.empty((0, 6))
@@ -112,7 +113,7 @@ def main():
             classes = res_split[2].flatten().astype("int")
             confidences = res_split[1].flatten()
             IDs = res_split[3].flatten().astype("int")
-
+        # or using KIOU
         else:
             dets = []
             for i in range(len(bboxes)):
