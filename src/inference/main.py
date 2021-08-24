@@ -12,23 +12,33 @@ from util import nms_malisiewicz
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("-d", "--detector", type=str, default='yolo',
+                    help="chosen detector. Choose between 'yolo' and 'tiny-yolo'")
     ap.add_argument("-t", "--tracker", type=str, default='sort',
                     help="chosen tracker. Choose between 'sort' and 'kiou'")
     ap.add_argument("-i", "--input", type=str, default="input/",
                     help="path to the input images folder")
     ap.add_argument("-o", "--output", type=str, default="output/out.txt",
                     help="path to the output file in MOT format")
-    ap.add_argument("-r", "--representation", type=str, default="residuals",
-                    help="chosen representation. Choose between 'residuals' and 'decoded'")
+    ap.add_argument("-r", "--representation", type=str, default="residual",
+                    help="chosen representation. Choose between 'residual' and 'decoded'")
     args = vars(ap.parse_args())
 
     # Detector parameters
-    if args['representation'] == "residuals":
-        weights_path = "models/yolov4-residuals.weights"
-        config_path = "models/yolov4-residuals.cfg"
+    if args['representation'] == 'residual':
+        if args['detector'] == 'yolo':
+            weights_path = "models/yolov4-residual.weights"
+            config_path = "models/yolov4-residual.cfg"
+        else:
+            weights_path = "models/yolov4-tiny-residual.weights"
+            config_path = "models/yolov4-tiny-residual.cfg"
     else:
-        weights_path = "models/yolov4-decoded.weights"
-        config_path = "models/yolov4-decoded.cfg"
+        if args['detector'] == 'yolo':
+            weights_path = "models/yolov4-decoded.weights"
+            config_path = "models/yolov4-decoded.cfg"
+        else:
+            weights_path = "models/yolov4-tiny-decoded.weights"
+            config_path = "models/yolov4-tiny-decoded.cfg"
 
     conf_thresh = 0.25
     nms_thresh = 0.45
@@ -59,7 +69,7 @@ def main():
     file_list_sorted = Tcl().call('lsort', '-dict', file_list)
 
     # counter for RGB, +1 for residues
-    if args['representation'] == "residuals":
+    if args['representation'] == "residual":
         counter = 1
     else:
         counter = 0
