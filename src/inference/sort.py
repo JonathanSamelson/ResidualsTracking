@@ -15,6 +15,9 @@
 	You should have received a copy of the GNU General Public License
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+    Copyright (c) 2021 UCLouvain, ICTEAM
+    Licensed under GPL-3.0 [see LICENSE for details]
+    Adapted by Jonathan Samelson (2021)
 
     NOTE:
     This file was modified from the original repository 
@@ -25,8 +28,6 @@
     Older bounding boxes are less significant because vehicles move quite fast.
     2) To allow to get back the vehicle class that corresponds to the predictions.
     Note that vehicle classes are not used in this repository.
-
-    Modified by Jonathan Samelson (2021)
 """
 
 from __future__ import print_function

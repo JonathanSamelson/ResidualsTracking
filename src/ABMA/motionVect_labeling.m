@@ -1,3 +1,7 @@
+% Copyright (c) 2021 UCLouvain, ICTEAM
+% Licensed under GPL-3.0 [see LICENSE for details]
+% Written by Karim El Khoury (2021)
+
 function [motionVect_reshaped_labeled] = motionVect_labeling(motionVect_reshaped, sensitivity_limit)
 
 motionVect_reshaped_labeled=motionVect_reshaped;

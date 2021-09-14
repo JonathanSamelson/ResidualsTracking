@@ -33,7 +33,10 @@
 % CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 % ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 % POSSIBILITY OF SUCH DAMAGE.
-
+%
+% Copyright (c) 2021 UCLouvain, ICTEAM
+% Licensed under GPL-3.0 [see LICENSE for details]
+% Modifed by Karim El Khoury (2021) to fit adaptive block matching requirements
 
 function imgComp = motionComp(imgI, motionVect, mbSize)
 

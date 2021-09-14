@@ -5,9 +5,11 @@ Copyright (c) 2017 TU Berlin, Communication Systems Group
 Licensed under The MIT License [see LICENSE for details]
 Written by Erik Bochinski
 
-Adapted for online tracking by Jonathan Samelson (2021)
-
 See https://github.com/siyuanc2/kiout/ for more information
+
+Copyright (c) 2021 UCLouvain, ICTEAM
+Licensed under GPL-3.0 [see LICENSE for details]
+Adapted for online tracking by Jonathan Samelson (2021)
 """
 
 from pykalman import KalmanFilter

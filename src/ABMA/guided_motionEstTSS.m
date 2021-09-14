@@ -39,7 +39,10 @@
 % ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 % POSSIBILITY OF SUCH DAMAGE.
 %
-% Modifed by Karim El Khoury 2021 to fit adaptive block matching requirements
+%
+% Copyright (c) 2021 UCLouvain, ICTEAM
+% Licensed under GPL-3.0 [see LICENSE for details]
+% Modifed by Karim El Khoury (2021) to fit adaptive block matching requirements
 
 
 function [motionVect, TSScomputations] = light_motionEstTSS(imgP, imgI, mbSize, p, MVstart)
