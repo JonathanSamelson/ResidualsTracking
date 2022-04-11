@@ -1,5 +1,5 @@
 # ResidualsTracking
-This repository hosts code and models of the paper "Deep Learning-Based Object Tracking via Compressed Domain Residual Frames" by Karim El Khoury, Jonathan Samelson and Benoît Macq.
+This repository hosts code and models of the paper [Deep Learning-Based Object Tracking via Compressed Domain Residual Frames](http://journal.frontiersin.org/article/10.3389/frsip.2021.765006) by Karim El Khoury, Jonathan Samelson and Benoît Macq.
 
 ## Description
 
