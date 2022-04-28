@@ -20,7 +20,7 @@ It is structured as follows:
 - `/src/inference` contains the Python code to obtain the tracking results (in MOT format) using decoded frames (classical representation) or the residual frames (representation from the compressed domain). See [Inference Readme](https://github.com/JonathanSamelson/ResidualsTracking/tree/main/src/inference/README.md) for specific instructions.
 - `/models/` contains the YOLOv4 and Tiny-YOLOv4 weights and config files used to get the detections. Those models are trained to detect vehicles.
 
-Once the results are obtained, HOTA metric can be used to evaluate the performance of the tracking. See [TrackEval](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/README.md) for the instructions.
+Once the results are obtained, HOTA metric can be used to evaluate the performance of the tracking. See [TrackEval](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/) for the instructions.
 
 ## References
 
