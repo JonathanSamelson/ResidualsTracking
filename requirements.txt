@@ -1,4 +1,4 @@
-opencv-python==4.5.3.56 # Need to be built differently to use GPUs
+opencv-python==4.5.3.56 # Need to be built differently to use GPUs, see https://pypi.org/project/opencv-python/
 scikit-image==0.18.2
 scipy==1.7.1
 numpy==1.21.2

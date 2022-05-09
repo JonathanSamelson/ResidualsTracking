@@ -64,4 +64,4 @@ The parameters used to generate the results of our paper are set by default. You
 
 ## Evaluate the results
 
-We recommend to use HOTA to evaluate the tracking results. Code for evaluation can be found at https://github.com/JonathonLuiten/TrackEval. See [this readme](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/Readme.md) more specifically for data in MOT format.
+We recommend to use HOTA to evaluate the tracking results. Code for evaluation can be found at https://github.com/JonathonLuiten/TrackEval. See [this readme](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/) more specifically for data in MOT format.

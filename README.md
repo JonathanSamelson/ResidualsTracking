@@ -18,9 +18,12 @@ For instance, residual frames can be used to detect only objects of interest or 
 It is structured as follows:
 - `/src/ABMA/` contains the Matlab code of the Adaptive Block Matching Algorithm (ABMA) allows to generate the residual frame of a video sequence. See [ABMA Readme](https://github.com/JonathanSamelson/ResidualsTracking/tree/main/src/ABMA/README.md) for specific instructions.
 - `/src/inference` contains the Python code to obtain the tracking results (in MOT format) using decoded frames (classical representation) or the residual frames (representation from the compressed domain). See [Inference Readme](https://github.com/JonathanSamelson/ResidualsTracking/tree/main/src/inference/README.md) for specific instructions.
-- `/models/` contains the YOLOv4 and Tiny-YOLOv4 weights and config files used to get the detections. Those models are trained to detect vehicles.
 
-Once the results are obtained, HOTA metric can be used to evaluate the performance of the tracking. See [TrackEval](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/) for the instructions.
+Once the results are obtained, HOTA metric can be used to evaluate the performance of the tracking. See [TrackEval](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/) for the instructions. Note that in our [article](http://journal.frontiersin.org/article/10.3389/frsip.2021.765006) we used the repository dated 7th April 2021.
+
+## Models
+
+The YOLOv4 and Tiny-YOLOv4 weights and config files used to get the detections can be downloaded via our [Google Drive](https://drive.google.com/drive/folders/1oGfANyHVvIdsxa4mfG1rsPlsAFDEKq3S?usp=sharing). Those models are trained to detect vehicles. The models to detect objects in decoded images were trained on [MIO-TCD Localization dataset](https://tcd.miovision.com/) while the models to detect objects in residuals frames were trained on a custom dataset based on [AICity 2021 Track 1 & 3](https://www.aicitychallenge.org/2021-ai-city/), whose the access can only be granted by AICity. Please see our [article](http://journal.frontiersin.org/article/10.3389/frsip.2021.765006) for more information about our models.
 
 ## References
 
